@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" type="text/css" href="css/facebook.css">
+    <title>Pal Nesto</title>
+
+    <style>
+      :root {
+        --accent-color: #f16334;
+      }
+      
+  
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img
+          src="img/logo-pal-nesto.png"
+          alt="Pal Nesto Business Solutions"
+        />
+      </div>
+      <button>Get in touch</button>
+    </nav>
+
+    <header>
+      <article>
+        <h1>
+          <span id="big">13 Reason</span> why your <span>facebook ads</span> are
+          <span>burning money</span>
+        </h1>
+        <button onclick="togglePopup()">Get the guide</button>
+      </article>
+      <div>
+        <img src="img/header-img.png" alt="" />
+      </div>
+    </header>
+    <div class="popup">
+      <div class="">
+        <svg onclick="togglePopup()" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        <h2>13 Reason Why Your Facebook Ads Are Burning Money!</h2>
+        <form action="/action_page.php" id="form1">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      
+        </ul>
+      </div>
+      </div>
+
+    <section class="background">
+      <main id="case">
+        <h3>
+          How we helped an e-commerce store scale to 5 figures in the first
+          month of their launch
+        </h3>
+        <img
+          src="img/DrSumoz ad case study 1.png"
+          alt="DrSumoz ad case study"
+        />
+        <div>
+          <p>&#8377; 13,458 invested generated a sale of &#8377; 32,780</p>
+        </div>
+      </main>
+    </section>
+
+    <section id="how">
+      <main>
+        <h2>How we did it</h2>
+        <article>
+          <img src="img/1.gif" alt="" />
+          <div>
+            <h4>Step 1</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem illo inventore, voluptatem nihil quibusdam
+              recusandae officia molestias, dicta repellendus dolore tenetur
+              earum. Veritatis, ex. Delectus.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="img/2.gif" alt="" />
+          <div>
+            <h4>Step 2</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem illo inventore, voluptatem nihil quibusdam
+              recusandae officia molestias, dicta repellendus dolore tenetur
+              earum. Veritatis, ex. Delectus.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="img/3.gif" alt="" />
+          <div>
+            <h4>Step 3</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem illo inventore, voluptatem nihil quibusdam
+              recusandae officia molestias, dicta repellendus dolore tenetur
+              earum. Veritatis, ex. Delectus.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="img/4.gif" alt="" />
+          <div>
+            <h4>Step 4</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem illo inventore, voluptatem nihil quibusdam
+              recusandae officia molestias, dicta repellendus dolore tenetur
+              earum. Veritatis, ex. Delectus.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="img/4.gif" alt="" />
+          <div>
+            <h4>Step 5</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem illo inventore, voluptatem nihil quibusdam
+              recusandae officia molestias, dicta repellendus dolore tenetur
+              earum. Veritatis, ex. Delectus.
+            </p>
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <section id="team" class="background">
+      <main>
+        <h2>Meet the team</h2>
+        <div class="container">
+          <div class="member">
+            <div class="img-container"><img src="img/1-01.svg" alt=""></div>
+            <h4>Abhishek</h4>
+            <p>graphic designer</p>
+          </div>
+          <div class="member">
+            <div class="img-container"><img src="img/2-01.svg" alt=""></div>
+            <h4>Srivatsav</h4>
+            <p>graphic designer</p>
+          </div>
+          <div class="member">
+            <div class="img-container"><img src="img/3-01.svg" alt=""></div>
+            <h4>Rishab hursan</h4>
+            <p>Copywriter</p>
+          </div>
+        </div>
+      </main>
+    </section>
+    
+
+    <section id="cta">
+      <h2>Want to scale your business too</h2>
+      <button>Let's Connect</button>
+    </section>
+    <script>
+      const popup = document.querySelector('.popup')
+      const popupBG = document.querySelector('.popup-bg')
+
+
+      function togglePopup(){
+
+        if(popup.style.display === 'flex'){
+          popup.style.display = 'none'
+          popupBG.style.display = 'none'
+          document.body.style.overflowY = "scroll"
+        }else{
+
+          popup.style.display = 'flex'
+          popupBG.style.display = 'flex'
+          document.body.style.overflowY = "hidden"
+        }
+
+      }
+
+    </script>
+  </body>
+</html>
