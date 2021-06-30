@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+  }
+  nav img {
+    height: 2rem;
+  }
+  button {
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+  }
+  nav button {
+    font-size: 1rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 2.5rem;
+    min-height: 100vh;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: normal;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  header span {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+  }
+  header span#big {
+    font-size: 3rem;
+    display: block;
+  }
+  header button {
+    font-size: 1.5rem;
+  }
+  header img {
+    height: 50vh;
+  }
+
+  section {
+    min-height: 100vh;
+    padding: 1.5rem 3rem;
+  }
+  section main {
+    margin: 0 auto;
+    max-width: 1250px;
+  }
+  section.background {
+    background-color: #FBE0D7;
+  }
+  #case {
+    background-color: rgba(var(--accent-color), 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #case main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #case img {
+    width: 95vw;
+    margin-bottom: 2rem;
+  }
+  #case h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    width: 80%;
+    text-align: center;
+  }
+  #case div {
+    background-color: var(--accent-color);
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+  }
+
+  #how h2 {
+    font-size: 3rem;
+    text-align: center;
+    opacity: 70%;
+  }
+  #how article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: 80vh;
+    margin-bottom: 2rem;
+  }
+  #how article h4 {
+    font-size: 1.5rem;
+  }
+  #how article p {
+    font-size: 1.15rem;
+  }
+  #how img {
+    width: 30rem;
+    position: static;
+    position: -webkit-sticky;
+    top: 50%;
+  }
+
+  #team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #team main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  #team .container {
+    display: flex;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  #team .img-container {
+    margin: 0 auto;
+    width: 14rem;
+    height: 15rem;
+
+  }
+  #team h4 {
+    font-weight: 500;
+    color: #43464b;
+    font-size: 26px;
+    padding-top: 26px;
+  }
+  #team p {
+    font-weight: 400;
+    color: #43464b;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  #cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #cta h2 {
+    font-size: 4rem;
+  }
+  #cta button {
+    font-size: 3rem;
+    padding: 1rem 3.5rem;
+  }
+
+  @media screen and (min-width: 628px) {
+    header {
+      flex-direction: row;
+    }
+    header img {
+      width: 50vw;
+    }
+    #how article {
+      flex-direction: row;
+      gap: 2rem;
+    }
+    #how article:nth-child(odd) img {
+      order: 2;
+    }
+    #case img {
+      height: 60vh;
+    }
+  }
+  
+  .popup{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#FBE0D7;
+    color: black;
+    width: 90vw;
+    height: 80vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    max-width: 750px;
+  }
+  .popup a{
+    color: black;
+  }
+  .popup h2{
+    border-bottom: 1px solid orange;
+    padding-bottom: 4px;
+    margin-bottom: 3rem;
+  }
+  .popup ul li{
+    margin-bottom: 1.5rem;
+  }
+  .popup svg{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    color: orange;
+    cursor: pointer;
+  }
+  .popup-bg{
+    background: black;
+    opacity: 35%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+  }
